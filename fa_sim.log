@@ -1,0 +1,474 @@
+[2026-02-06 16:23:27 UTC] vcs -full64 -licqueue '-timescale=1ns/1ns' '+vcs+flush+all' '+warn=all' '-sverilog' design.sv testbench.sv  && ./simv +vcs+lic+wait  
+                         Chronologic VCS (TM)
+       Version X-2025.06-SP1_Full64 -- Fri Feb  6 11:23:28 2026
+
+                    Copyright (c) 1991 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+Parsing design file 'design.sv'
+Parsing design file 'testbench.sv'
+Parsing included file 'frame_aligner_if.sv'.
+Back to file 'testbench.sv'.
+Parsing included file 'frame_aligner_pkg.sv'.
+Parsing included file 'transaction_in.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'transaction_out.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'transaction_in_ref.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'fa_ref_model.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'scoreboard.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'coverage.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'monitor_in.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'monitor_out.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'driver.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'generator.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'environment.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Parsing included file 'test.sv'.
+Back to file 'frame_aligner_pkg.sv'.
+Back to file 'testbench.sv'.
+Top Level Modules:
+       frame_aligner_tb_top
+TimeScale is 1 ns / 1 ns
+Starting vcs inline pass...
+4 modules and 0 UDP read.
+recompiling module frame_aligner
+recompiling module frame_aligner_if
+recompiling package frame_aligner_pkg
+recompiling module frame_aligner_tb_top
+All of 4 modules done
+rm -f _cuarc*.so _csrc*.so pre_vcsobj_*.so share_vcsobj_*.so
+if [ -x ../simv ]; then chmod a-x ../simv; fi
+g++  -o ../simv      -rdynamic  -Wl,-rpath='$ORIGIN'/simv.daidir -Wl,-rpath=./simv.daidir -Wl,-rpath=/apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib -L/apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib  -Wl,-rpath-link=./   objs/amcQw_d.o  _287_archive_1.so  SIM_l.o       rmapats_mop.o rmapats.o rmar.o rmar_nd.o  rmar_llvm_0_1.o rmar_llvm_0_0.o            -lvirsim -lerrorinf -lsnpsmalloc -lvfs      -lvcsnew -ldistsimclient -lsimprofile -luclinative /apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib/vcs_tls.o   -Wl,-whole-archive  -lvcsucli    -Wl,-no-whole-archive          /apps/vcsmx/vcs/X-2025.06-SP1/linux64/lib/vcs_save_restore_new.o -ldl  -lc -lm -lpthread -ldl 
+../simv up to date
+CPU time: .713 seconds to compile + .726 seconds to elab + .400 seconds to link
+Chronologic VCS simulator copyright 1991-2025
+Contains Synopsys proprietary information.
+Compiler version X-2025.06-SP1_Full64; Runtime version X-2025.06-SP1_Full64;  Feb  6 11:23 2026
+reset asserted at 10
+reset de-asserted at 20
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 6da0fac86b7381b9f408, Time = 20
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = d9a99a23f71b81dd5079, Time = 135
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 26d38141531a084b3660, Time = 255
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 2828, Payload = 12c0449a918feb16236c, Time = 375
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = e12b, Payload = 91e9bfc333f5e30e9ea1, Time = 495
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 7be7, Payload = 4ac098bdf9aeaac45279, Time = 615
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = baed, Payload = 7ff164d9ee92eecab51d, Time = 735
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = c49e167bd5fb8cd3f932, Time = 855
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 4266a9be24dcd74a7ca0, Time = 975
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = cf365ed6326184f64779, Time = 1095
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = e3d5a16fbe677263ff77, Time = 1215
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = b17dab2f5cc553904b2a, Time = 1335
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 5e89629efdd9c5922473, Time = 1455
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 73309eb0fad3c0936e51, Time = 1575
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = c4a8, Payload = bb28b602a2f6cd7aa8a4, Time = 1695
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 0ca3, Payload = 0c7c97c12311abe0fc12, Time = 1815
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = d62760375cb96d8d4ac1, Time = 1935
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = cd16, Payload = bbc94e03766c53d6770e, Time = 2055
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = f1a7, Payload = 61847533087c07229757, Time = 2175
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 045db586bead9b7c91f2, Time = 2295
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = dd69a55dea0788ea1b7c, Time = 2415
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 7e2b666fa569537b5cff, Time = 2535
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = c705deb40105b0a4eaeb, Time = 2655
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 1e80, Payload = 1cab1ba1e9338b274810, Time = 2775
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 55eaf51183dbd5b29503, Time = 2895
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 9ff80d0a97087429e790, Time = 3015
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 56e25b56eca5f2a8cab1, Time = 3135
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 28acd369592c9189a7a2, Time = 3255
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 3f989c109f37c3406f13, Time = 3375
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 4f62, Payload = 1f7205136d0d0347b85f, Time = 3495
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = fd5973cb86d4882bc906, Time = 3615
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = c8d8276ea98470fd3c2c, Time = 3735
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 799d, Payload = d302a59b97d19c38b6e5, Time = 3855
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 2926, Payload = dcbe42c8265aefd55137, Time = 3975
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = bd49, Payload = 9e7df7d395e72bb7dafa, Time = 4095
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 8f2f5c6d0bc2031712c5, Time = 4215
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 8d427aff6eb75a00ec3b, Time = 4335
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = cf32, Payload = cae23388c4dc1149c6f3, Time = 4455
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = c085bd95564e67b66729, Time = 4575
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 53f6cb48988d7954758e, Time = 4695
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 9d2b, Payload = e1da54683c07aafa9b11, Time = 4815
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 896333f2e489ee6cc865, Time = 4935
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 4dfa, Payload = 98a9915a62a6bbf1bda8, Time = 5055
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = b853c2e210ffc4c637df, Time = 5175
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 860c, Payload = a07a6cb422706331d23d, Time = 5295
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 431693ac0ff7016c5f22, Time = 5415
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 8ef2bb6d531413a7850e, Time = 5535
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 46e5, Payload = 93c503a738a3a76ec482, Time = 5655
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = c3ccd263c78265895ed6, Time = 5775
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 84399c1750ed37e7c0e8, Time = 5895
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 496ce7c0f727101c039b, Time = 6015
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = ad9c, Payload = 7ad64946fffb4ce9b59e, Time = 6135
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = a2484e6819e65e2a4bd8, Time = 6255
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 44c6, Payload = f1e2c106ebcb021a1bc8, Time = 6375
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = e5fa491578873fc50566, Time = 6495
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = e5b7b5432c810d89d5dc, Time = 6615
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 5325beda415df3a8297d, Time = 6735
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = e04246fccf07e3008a01, Time = 6855
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 9a113a49ad4d66042544, Time = 6975
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 9286bf5e75f26e8fdcc6, Time = 7095
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 2f3882ecff0a123b3d32, Time = 7215
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = da49, Payload = 974f4d3762f17d00b49e, Time = 7335
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = f0767295191f3d124991, Time = 7455
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 03da, Payload = 9b366fbf58cb9af61950, Time = 7575
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = bc7234fa9fea4f94340b, Time = 7695
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 5df4469be250362f1cf9, Time = 7815
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 3a9dc91ae6cbe780c612, Time = 7935
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = af1c35f4cf46224e9aea, Time = 8055
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = c87b127390d0148890ff, Time = 8175
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 57b1, Payload = ed596ad32322c9b2c586, Time = 8295
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 8dde56e7e62cbb64fc94, Time = 8415
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = ffdc1ea2ee5d9e68f006, Time = 8535
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 3d38ecd97030e5fcaff5, Time = 8655
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = ec08896b20754012f194, Time = 8775
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = b656, Payload = f2e3825e96ca990d93d4, Time = 8895
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = a8eaa8ecbba9c075a969, Time = 9015
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = ebd2, Payload = 1149550b5b6cd1cc3f61, Time = 9135
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 14593571fb1a1f9a65cd, Time = 9255
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 5a20, Payload = 8ecf6356626606bbb00d, Time = 9375
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 9e3ed53d24a7ec97d5e4, Time = 9495
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 1562, Payload = d8e184ba91582f3d1435, Time = 9615
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 40270f2d7848acdf3259, Time = 9735
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = b4af820fbb8606172553, Time = 9855
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 3b116c5093bd98ba9997, Time = 9975
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 7468, Payload = 664d1baf6f05f39a6468, Time = 10095
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 22521a387768e9d39633, Time = 10215
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = cd68cdbe73242ed03f7d, Time = 10335
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 1d7f48996f769d14e897, Time = 10455
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 52ebb4d1fe3ef21dd233, Time = 10575
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 35f75bab14ca0e7de4c8, Time = 10695
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = 81f144b9762ba4015c27, Time = 10815
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 0fe0, Payload = 2aa49d5bdc83c55f55c4, Time = 10935
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = 99d64608926bc006bb90, Time = 11055
+------------------------
+
+---------- Driver ----------
+HeaderType = 1 Header = afaa, Payload = ffffd41a36b62f4797a8, Time = 11175
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 79b7, Payload = e0c103f261cc3bc19803, Time = 11295
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = 0506, Payload = 1a11f2b4760bf602f5ed, Time = 11415
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = dbcf, Payload = 841b9c59b3b267a17aee, Time = 11535
+------------------------
+
+---------- Driver ----------
+HeaderType = 0 Header = bf38, Payload = e8ebe946e8108d879d35, Time = 11655
+------------------------
+
+---------- Driver ----------
+HeaderType = 2 Header = ba55, Payload = ada02ce01eb411f50253, Time = 11775
+------------------------
+===== TEST PASSED =====
+$finish called from file "testbench.sv", line 53.
+$finish at simulation time                11796
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 11796 ns
+CPU Time:      0.640 seconds;       Data structure size:   0.0Mb
+Fri Feb  6 11:23:31 2026
+Done
